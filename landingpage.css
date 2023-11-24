@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Kaisei+Decol:wght@500&family=Oswald:wght@200&family=Philosopher&display=swap');
+:root{
+    --primary-color : #669ccb;
+    --primary-color-dark: #5681a7;
+    --secondary-color: #e8f1fa;
+    --text-dark:#282d31;
+    --text-light:#767268;
+    --extra-light:#f3f4f6;
+}
+*{
+margin: 0;
+padding: 0;
+font-family: 'Philosopher', sans-serif;
+box-sizing: border-box;
+text-transform: capitalize;
+}
+.sct_cont{
+    max-width: 1200px;
+    padding: 5rem 1rem;
+    margin: auto;
+}
+.sct_title{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom:1rem;
+    text-align: center;
+}
+.sct_subtitle{
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--primary-color);
+    margin-bottom:5rem;
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo a{
+    text-decoration: none;
+    color: var(--extra-light);
+    font-size: 1.5rem;
+}
+
+.nav_links{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+.link{
+    color: var(--extra-light);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.link:hover{
+    color: var(--primary-color);
+    /* background-color: #f3f4f6; */
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(45, 92, 132,.5),rgba(45, 92, 132,.5)),url("https://img.freepik.com/free-photo/majestic-mountain-peak-reflects-tranquil-pond-generated-by-ai_188544-53519.jpg?size=626&ext=jpg&ga=GA1.1.2008673500.1700206067&semt=ais");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ header .sct_cont{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .head_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: var(--extra-light);
+ }
+
+ .head_cont h1{
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 5rem;
+ }
+ .head_cont p{
+    text-align: center;
+ }
+
+ .head_cont button{
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--extra-light);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+ }
+
+ .head_cont button:hover{
+    background-color: var(--primary-color-dark);
+ }
+ .joun_cont{
+    background-color:var(--secondary-color);
+ }
+
+ .joun_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+ }
+
+ .contry_card{
+    background-color: var(--extra-light);
+ }
+
+ .country_name{
+    padding:1rem ;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: .5ren;
+    color: var(--text-light);
+    cursor: pointer;
+ }
+ .country_name i{
+    font-size: 1.2rem;
+ }
+ .country_name span{
+    font-style: italic;
+ }
+ .banner_cont{
+    background-image: linear-gradient(rgba(35, 71, 103,.5),rgba(35, 71, 103,.5)),url("https://img.freepik.com/free-photo/tropical-bungalow-turquoise-water-with-palm-trees-generated-by-ai_188544-11676.jpg?ga=GA1.1.2008673500.1700206067&semt=ais_ai_generated");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+ }
+
+ .banner_cont .sct_cont{ 
+    padding: 10rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .banner_content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    color: var(--extra-light);
+ }
+
+ .banner_content h2{
+    font-size: 2rem;
+    font-weight: 400;
+ }
+
+ .banner_content button{
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    cursor: pointer;
+ }
+.dis_cont{
+    background-color: var(--secondary-color);
+ }
+.dis_cont :is(.sct_title, .sct_subtitle){
+    color: var(--text-dark);
+}
+.display_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.display_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--extra-light);
+    text-align: center;
+}
+.display_card i{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.display_card h4{
+font-size: 1rem;
+font-weight: 500;
+padding: 0 1rem;
+color: var(--text-dark);
+}
+
+.display_card p{
+font-size: .8rem;
+padding: 0 1rem;
+color: var(--text-dark);
+}
+
+.grid-1{
+   grid-area: 1/1/3/3; 
+}
+
+footer{
+    background-color: var(--text-dark);
+    color: var(--secondary-color);
+}
+
+footer .sct_cont{
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+footer h4{
+ font-size: 1.5rem;
+ font-weight: 500;
+}
+
+.social_ico{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 1rem;
+}
+.social_ico i{
+    padding: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+footer p{
+    font-style: italic;
+}
+button:hover{
+    font-size: 15px;
+}
